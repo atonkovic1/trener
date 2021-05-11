@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Trener.Model.Client">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAUAAAAABAAAAQAAAQAAAAAAQAAAAAAEAAAAAAAg=</HashCode>
+      <FileName>Client.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FitnessLevel" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="InTrainingGroups" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Trener.Model.ClientDebt">
+    <Position X="3.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAQAAAAASAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClientDebt.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ClientInDebt" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Trener.Model.Exercise">
+    <Position X="6.5" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exercise.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="RequiredFitnessLevel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Trener.Model.Training">
+    <Position X="9.5" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAEAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Training.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="RequiredFitnessLevel" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Exercises" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Trener.Model.TrainingGroup">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAQAEBAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TrainingGroup.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Training" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="TrainingPeriods" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Trener.Model.TrainingPeriod">
+    <Position X="12.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAEA=</HashCode>
+      <FileName>TrainingPeriod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Trener.Model.Repositories.IClientDebtRepository">
+    <Position X="6.5" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAQAAIAAAAABAQBAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Repositories\IClientDebtRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Trener.Model.Repositories.IClientRepository">
+    <Position X="3.75" Y="6.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAEAAAAAAAAAAAAAAAAAAAIAAAAACICAAAAAAE=</HashCode>
+      <FileName>Repositories\IClientRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Trener.Model.Repositories.IExerciseRepository">
+    <Position X="9" Y="9.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAIAAAAAAAAAAAAAAAAAAAACIAAAAAAAgAgA=</HashCode>
+      <FileName>Repositories\IExerciseRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Trener.Model.Repositories.ITrainingGroupRepository">
+    <Position X="9" Y="6.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAABAAAAQAAAgAAAAAEACAAAAAAAA=</HashCode>
+      <FileName>Repositories\ITrainingGroupRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Trener.Model.Repositories.ITrainingPeriodRepository">
+    <Position X="11.75" Y="6.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAgAAAAAAAQAAAAAAABSAAEAAAAAAAAA=</HashCode>
+      <FileName>Repositories\ITrainingPeriodRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Trener.Model.Repositories.ITrainingRepository">
+    <Position X="6.5" Y="9.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAGAAAAACAgAAAAAAAAIAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\ITrainingRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Trener.Model.FitnessLevel">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQ=</HashCode>
+      <FileName>FitnessLevel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
